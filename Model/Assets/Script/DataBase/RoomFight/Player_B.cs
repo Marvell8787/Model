@@ -67,11 +67,11 @@ static class Player_B
         Image I_Temp;
 
         I_Temp = GameObject.Find("Image_Show_B").GetComponent<Image>();
-        I_Temp.sprite = Resources.Load("Image/Show", typeof(Sprite)) as Sprite;
+        I_Temp.sprite = Resources.Load("Image/Battle/RoomFight/Show", typeof(Sprite)) as Sprite;
 
 
         I_Temp = GameObject.Find("Image_Hand_B_0" + (Hand_Choose + 1).ToString()).GetComponent<Image>();
-        I_Temp.sprite = Resources.Load("Image/cover", typeof(Sprite)) as Sprite;
+        I_Temp.sprite = Resources.Load("Image/Battle/RoomFight/cover", typeof(Sprite)) as Sprite;
         Hand[Hand_Choose] = Deck_Fight[Deck_Draw];
 
 
@@ -103,13 +103,13 @@ static class Player_B
                     switch (Hand[i])
                     {
                         case "A":
-                            I_Temp.sprite = Resources.Load("Image/f1", typeof(Sprite)) as Sprite;
+                            I_Temp.sprite = Resources.Load("Image/Battle/RoomFight/f1", typeof(Sprite)) as Sprite;
                             break;
                         case "B":
-                            I_Temp.sprite = Resources.Load("Image/f2", typeof(Sprite)) as Sprite;
+                            I_Temp.sprite = Resources.Load("Image/Battle/RoomFight/f2", typeof(Sprite)) as Sprite;
                             break;
                         case "C":
-                            I_Temp.sprite = Resources.Load("Image/f3", typeof(Sprite)) as Sprite;
+                            I_Temp.sprite = Resources.Load("Image/Battle/RoomFight/f3", typeof(Sprite)) as Sprite;
                             break;
                         default:
                             break;
@@ -124,7 +124,7 @@ static class Player_B
         Image I_Temp;
 
         I_Temp = GameObject.Find("Image_Hand_B_0" + (Hand_Choose + 1).ToString()).GetComponent<Image>();
-        I_Temp.sprite = Resources.Load("Image/hand", typeof(Sprite)) as Sprite;
+        I_Temp.sprite = Resources.Load("Image/Battle/RoomFight/hand", typeof(Sprite)) as Sprite;
 
         I_Temp = GameObject.Find("Image_Show_B").GetComponent<Image>();
 
@@ -132,13 +132,13 @@ static class Player_B
         switch (Hand[Hand_Choose])
         {
             case "A":
-                I_Temp.sprite = Resources.Load("Image/f1", typeof(Sprite)) as Sprite;
+                I_Temp.sprite = Resources.Load("Image/Battle/RoomFight/f1", typeof(Sprite)) as Sprite;
                 break;
             case "B":
-                I_Temp.sprite = Resources.Load("Image/f2", typeof(Sprite)) as Sprite;
+                I_Temp.sprite = Resources.Load("Image/Battle/RoomFight/f2", typeof(Sprite)) as Sprite;
                 break;
             case "C":
-                I_Temp.sprite = Resources.Load("Image/f3", typeof(Sprite)) as Sprite;
+                I_Temp.sprite = Resources.Load("Image/Battle/RoomFight/f3", typeof(Sprite)) as Sprite;
                 break;
             default:
                 break;
